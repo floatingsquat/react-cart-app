@@ -1,44 +1,41 @@
-.product-item{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align:center;
-    padding:30px;
-    width:370px;
-    border-radius:15px;
-    margin:15px;
-    gap:5px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;    
+.product-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  width: 320px;
+  border-radius: 16px;
+
+  gap: 12px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-.product-item img{
-    width:200px;
-    height:250px;
+.product-item img {
+  width: 200px;
+  height: 250px;
 }
 
-.btn-add-cart{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:7px;
-    width:200px;
-    height:50px;
-    border:1px solid grey;
-    background-color:white;
-    border-radius:8px;
-    font-size:22px;
-    font-weight: 500;
-    font-family: 'Kanit', sans-serif;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.btn-add-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.btn-add-cart:hover{
-    
-    background-color:#0085ff;
-    transition:200ms;
-    color:white;
-    cursor:pointer;
-    
-    
+.btn-add-cart:hover {
+  background-color: #0085ff;
+  transition: 200ms;
+  color: white;
+  cursor: pointer;
 }

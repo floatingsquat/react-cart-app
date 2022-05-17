@@ -1,13 +1,12 @@
-import CartList from 'components/CartList/CartList'
-import React from 'react'
+import CartList from "components/CartList";
+import React from "react";
 
 function Cart() {
   return (
     <div>
-      <CartList/>
-      
+      <CartList />
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;

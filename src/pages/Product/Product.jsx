@@ -1,12 +1,11 @@
-import ProductList from "components/ProductList/ProductList"
-
+import ProductList from "components/ProductList";
 
 function Product() {
   return (
     <div>
       <ProductList />
     </div>
-  )
+  );
 }
 
-export default Product
+export default Product;

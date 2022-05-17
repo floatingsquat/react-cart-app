@@ -2,7 +2,7 @@ import React, { useContext, useReducer } from "react";
 import CartContext from "./CartContext";
 import CartReducer from "./CartReducer";
 import data from "../data";
-
+import { toast } from "react-toastify";
 const CartState = (props) => {
   const initialState = {
     product: data,
@@ -13,9 +13,11 @@ const CartState = (props) => {
   //actions
   const addProductToCart = (product) => {
     dispatch({ type: "ADD_CART", payload: product });
+    toast.success("Product added to your cart!");
   };
-  const removeProductFromCart = (product) => {
+  const removeFromCart = (product) => {
     dispatch({ type: "REMOVE_CART", payload: product });
+    toast.error("Product removed from your cart!");
   };
   const changeQty = (product) => {
     dispatch({ type: "CHANGE_QTY", payload: product });
@@ -27,13 +29,13 @@ const CartState = (props) => {
         state,
         dispatch,
         addProductToCart,
-        removeProductFromCart,
+        removeFromCart,
         changeQty,
         cart: state.cart,
         product: state.product,
       }}
     >
-        {props.children}
+      {props.children}
     </CartContext.Provider>
   );
 };

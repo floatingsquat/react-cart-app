@@ -1,84 +1,58 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;1,500;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;1,500;1,800;1,900&display=swap");
 
 * {
   margin: 0;
-  box-sizing:border-box;
-  
+  box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
-  font-size:27px;
-  font-family: 'Kanit', sans-serif;
+  font-size: 27px;
+  font-family: "Kanit", sans-serif;
 }
-p{
-  font-size:27px;
+p {
+  font-size: 27px;
 }
-h1{
-  font-size:37px;
-  
+h1 {
+  font-size: 37px;
 }
-h1 span{
-  color:#8192a2;
+h1 span {
+  color: #8192a2;
 }
 
-.container{
-  display:flex;
-  margin:0;
-   width: 100%;
+.container {
+  display: flex;
+  margin: 0;
+  width: 100%;
   position: absolute;
   background: linear-gradient(to bottom, #646470 50%, #f1f2f4 50%);
-
-
 }
-.card{
-  display:flex;
+.card {
+  display: flex;
   flex-wrap: wrap;
-  margin:120px 50px 50px 120px;
+  margin: 120px 40px 120px 40px;
   justify-content: left;
-  align-items:flex-start;
+  align-items: flex-start;
   flex-direction: row;
-  background-color:white;
-  border-radius:20px;
-  width:90%;
-  overflow:hidden;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-.left-menu{
-  display:flex;
-  flex-direction: column;
-  height:100%;
-  background-color:#f7f6fb;
-  text-align:left;
-}
-.logo-wrapper{
-  padding:60px 30px 10px 30px;
-  
-  text-align:center;
-  
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.nav{
-  
-  padding-top:10px;
+.nav {
+  padding-top: 10px;
 }
 
-
-.content{
-  display:flex;
+.content {
+  display: flex;
   flex-flow: column;
-  flex:1;
-  width:700px;
-  height:100%;
-  background-color:#fefefe;
+  flex: 1;
+  width: 700px;
+  height: 100%;
+  background-color: #fefefe;
 }
-
-
-@media (max-width: 480px) {
-  .left-menu{
-    display:none;
-  }
-}
-
